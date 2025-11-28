@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tourix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0077b6;
+            --secondary-color: #00b4d8;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #343a40;
+            --heading-color: #212529;
+            --light-text: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .site-header {
+            background: var(--primary-color);
+            color: var(--light-text);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .site-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        nav {
+            background-color: rgba(0,0,0,0.1);
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: var(--light-text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .destination-card {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .destination-card img {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-to-top a {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-top a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .video-container {
+             text-align: center;
+             padding: 2rem;
+             background: var(--card-background);
+             border-radius: 10px;
+             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+             margin-bottom: 3rem;
+        }
+        
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--heading-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        footer h4 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        footer a {
+            color: var(--light-text);
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        hr {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .site-header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                padding: 0.5rem;
+                margin: 0 0.2rem;
+            }
+            main {
+                margin: 1rem auto;
+            }
+            .destination-card {
+                padding: 1.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="site-header" id="top">
+        <h1>Welcome To Tourix</h1>
+        <nav>
+            <a href="#paris">Paris</a>
+            <a href="#tokyo">Tokyo</a>
+            <a href="#budapest">Budapest</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destination-card" id="paris">
+            <h2 align="center">Exploring Paris</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi accusamus saepe. Minus quas accusamus illum similique. Nam cumque similique dolor mollitia voluptatem ipsam eligendi molestias quam, dignissimos nesciunt asperiores.</p>
+            <img src="images/unnamed (1).png" alt="The Eiffel Tower in Paris">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <p class="back-to-top"><a href="#top">Back to top ↑</a></p>
+        </section>
+
+        <section class="destination-card" id="tokyo">
+            <h2 align="center">Exploring Tokyo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi accusamus saepe. Minus quas accusamus illum similique. Nam cumque similique dolor mollitia voluptatem ipsam eligendi molestias quam, dignissimos nesciunt asperiores.</p>
+            <img src="images/unnamed (2).png" alt="A vibrant street scene in Tokyo at night">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <p class="back-to-top"><a href="#top">Back to top ↑</a></p>
+        </section>
+
+        <section class="destination-card" id="budapest">
+            <h2 align="center">Exploring Budapest</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi accusamus saepe. Minus quas accusamus illum similique. Nam cumque similique dolor mollitia voluptatem ipsam eligendi molestias quam, dignissimos nesciunt asperiores.</p>
+            <img src="images/unnamed.png" alt="The Hungarian Parliament Building in Budapest at dusk">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <p class="back-to-top"><a href="#top">Back to top ↑</a></p>
+        </section>
+
+        <section class="video-container">
+            <video controls>
+                <source src="Tourism_Video_Generation_Complete.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>For more information visit on these:</h4>
+        <a href="https://www.incredibleindia.gov.in/en" target="_blank" rel="noopener noreferrer">Incredible India</a>
+        <a href="https://tourism.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of Tourism</a>
+        <a href="https://uptourism.gov.in/" target="_blank" rel="noopener noreferrer">UP Tourism</a>
+    </footer>
+
+</body>
+</html>

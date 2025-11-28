@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStore Login</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .header, .top-nav {
+            display: flex;
+        }
+
+        .header > div, .top-nav > a {
+            border-right: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: #FFDAB9;
+        }
+
+        #logo {
+            flex: 1;
+        }
+
+        #website-name {
+            flex: 5;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .top-nav {
+            background-color: #FFDAB9;
+            border-top: 1px solid black;
+        }
+
+        .top-nav a {
+            flex: 1;
+            text-decoration: none;
+            color: black;
+        }
+        
+        #website-name, .top-nav a:last-child {
+            border-right: none;
+        }
+
+        .main-content {
+            display: flex;
+            border-top: 1px solid black;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            flex: 1;
+            border-right: 1px solid black;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            padding: 15px;
+        }
+
+        .login-section {
+            flex: 5;
+            padding: 50px;
+        }
+        
+        .login-form {
+            width: 350px;
+            margin: auto;
+        }
+        
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            padding: 8px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .form-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .form-buttons button {
+            padding: 8px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+
+        .form-buttons button.submit-btn {
+            border: 3px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <div class="header">
+    <div id="logo">
+        <img src="abes.png" height="70px" width="100px" alt="Website Logo">
+    </div>
+    <div id="website-name">E-BOOKHUB</div>
+</div>
+
+        <nav class="top-nav">
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">Registration</a>
+            <a href="#">Catalogue</a>
+            <a href="#">Cart</a>
+        </nav>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <ul>
+                    <li>CSE</li>
+                    <li>ECE</li>
+                    <li>EEE</li>
+                    <li>CIVIL</li>
+                </ul>
+            </aside>
+
+            <main class="login-section">
+                <div class="login-form">
+                    <h2>Login Page</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">User Name:</label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Passwords:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
